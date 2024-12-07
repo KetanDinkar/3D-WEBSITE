@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Rose Design</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #070707, #f3e5f5);
+        }
+        h1 {
+            position: absolute;
+            top: 10px;
+            text-align: center;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            color: #f30606;
+            margin: 0;
+            padding: 10px;
+            font-weight: 700;
+        }
+        model-viewer {
+            width: 180vw; /* Double the original width */
+            height: 120vh; /* Double the original height */
+            max-width: 1200px; /* Maximum width to prevent excessive scaling */
+            max-height: 1200px; /* Maximum height to match the scaling */
+        }
+    </style>
+</head>
+<body>
+    <h1>MY FIRST 3D WEBSITE TRY</h1>
+    <model-viewer 
+        src="TABL.glb" 
+        alt="A beautifully rotating 3D model of a rose." 
+        auto-rotate 
+        rotation-per-second="30deg" 
+        camera-controls>
+    </model-viewer>
+</body>
+</html>
